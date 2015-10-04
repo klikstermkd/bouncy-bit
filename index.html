@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest">
+   <head>
+      <title>Bouncy Bit</title>
+
+      <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <link rel="icon" sizes="192x192" href="images/bouncy.png">
+
+      <link rel="stylesheet" type="text/css" href="css/app.css" />
+      <link rel="stylesheet" type="text/css" href="css/famous.css" />
+      <link rel="stylesheet" type="text/css" href="css/font.css" />
+   </head>
+   <body>
+      <script type="text/javascript" src="libs/functionPrototypeBind.js"></script>
+      <script type="text/javascript" src="libs/classList.js"></script>
+      <script type="text/javascript" src="libs/requestAnimationFrame.js"></script>
+      <script type="text/javascript" src="libs/SAT.min.js"></script>
+      <script type="text/javascript" src="libs/require.js"></script>
+      <script type="text/javascript" src="libs/famous.min.js"></script>
+
+      <script type="text/javascript">
+         require.config({baseUrl: 'src/'});
+         require(['main']);
+      </script>
+   </body>
+</html>
